@@ -14,7 +14,8 @@ int main()
     double reskms = miles/0.621371192;
 
     printf("\n\n%lf in miles = %lf.",kms,resmiles);
-    printf("\n%f in kilometers = %lf.",kms,reskms);
+    printf("\n%f in kilometers = %lf.",miles,reskms);
     
     return 0;
+
 }

@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int powerr(int n,int y);
+int main()
+{
+    int n,y;
+    printf("Enter the base: ");
+    scanf("%d",&n);
+    printf("Enter the exponent: ");
+    scanf("%d",&y);
+    
+    int pow = powerr(n,y);
+    
+    printf("\n%d^%d = %d.",n,y,pow);
+    
+    return 0;
+}
+
+int powerr(int n,int y)
+{
+    int pow=n;
+    for(int i=1;i<y;i++)
+    {
+        pow*=n;
+    }
+    return pow;
+}
